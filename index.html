@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quanta AI • Intelligent Assistant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23151b2b'/><text x='50' y='62' font-size='56' text-anchor='middle' fill='%23aab4ff' font-family='Arial, Helvetica, sans-serif'>Q</text></svg>">
+  <meta name="theme-color" content="#0b0f17" />
+</head>
+<body>
+  <div class="app-container">
+    <!-- Left Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <div class="logo">
+          <div class="logo-icon">Q</div>
+          <h1 class="logo-text">Quanta AI</h1>
+        </div>
+      </div>
+
+      <div class="sidebar-search">
+        <div class="search-container">
+          <input type="text" placeholder="Search" class="search-input" />
+          <span class="search-shortcut">⌘K</span>
+        </div>
+      </div>
+
+      <nav class="sidebar-nav">
+        <ul class="nav-list">
+          <li class="nav-item active">
+            <a href="#" class="nav-link">
+              <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+              </svg>
+              <span>AI Chat</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2H5a2 2 0 00-2-2z"/>
+                <path d="M8 5a2 2 0 012-2h4a2 2 0 012 2v2H8V5z"/>
+              </svg>
+              <span>Projects</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
+              </svg>
+              <span>Templates</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+              </svg>
+              <span>Documents</span>
+              <svg class="nav-icon-plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 5v14m-7-7h14"/>
+              </svg>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+              </svg>
+              <span>Community</span>
+              <span class="nav-badge">NEW</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+              <span>History</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="theme-toggle">
+          <span class="theme-label">Light</span>
+          <div class="toggle-switch">
+            <div class="toggle-slider"></div>
+          </div>
+          <span class="theme-label">Dark</span>
+        </div>
+        
+        <div class="user-profile">
+          <div class="user-avatar">Q</div>
+          <div class="user-info">
+            <div class="user-name">Quanta User</div>
+            <div class="user-email">user@quanta.ai</div>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="content-header">
+        <h2 class="content-title">AI Chat</h2>
+      </div>
+
+      <div class="chat-container">
+        <div class="welcome-section">
+          <h1 class="welcome-title">Welcome to Quanta AI</h1>
+          <p class="welcome-subtitle">Get started by asking a question and I'll help you with the rest. Not sure where to start?</p>
+          
+          <div class="suggested-actions">
+            <button class="action-btn action-write">
+              <div class="action-icon write-icon">✍️</div>
+              <span>Write copy</span>
+              <svg class="action-plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 5v14m-7-7h14"/>
+              </svg>
+            </button>
+            
+            <button class="action-btn action-image">
+              <div class="action-icon image-icon">🎨</div>
+              <span>Image generation</span>
+              <svg class="action-plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 5v14m-7-7h14"/>
+              </svg>
+            </button>
+            
+            <button class="action-btn action-avatar">
+              <div class="action-icon avatar-icon">👤</div>
+              <span>Create avatar</span>
+              <svg class="action-plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 5v14m-7-7h14"/>
+              </svg>
+            </button>
+            
+            <button class="action-btn action-code">
+              <div class="action-icon code-icon">💻</div>
+              <span>Write code</span>
+              <svg class="action-plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 5v14m-7-7h14"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div id="chat" class="chat-messages">
+          <!-- Messages will be injected here -->
+        </div>
+
+        <div id="typing" class="typing-indicator hidden">
+          <div class="typing-avatar">Q</div>
+          <div class="typing-bubble">
+            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+          </div>
+        </div>
+
+        <div class="input-composer">
+          <div class="composer-main">
+            <textarea id="input" class="composer-input" placeholder="Ask me anything..." rows="1"></textarea>
+            <button type="submit" class="send-btn" id="sendBtn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/>
+              </svg>
+            </button>
+          </div>
+          
+          <div class="composer-options">
+            <button class="option-btn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21.44 11.05l-9.19 9.19a6 6 0 01-8.49-8.49l9.19-9.19a4 4 0 015.66 5.66l-9.2 9.19a2 2 0 01-2.83-2.83l8.49-8.48"/>
+              </svg>
+              <span>Attach</span>
+            </button>
+            <button class="option-btn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2a3 3 0 00-3 3v7a3 3 0 006 0V5a3 3 0 00-3-3z"/>
+                <path d="M19 10v2a7 7 0 01-14 0v-2"/>
+                <line x1="12" y1="19" x2="12" y2="23"/>
+                <line x1="8" y1="23" x2="16" y2="23"/>
+              </svg>
+              <span>Voice Message</span>
+            </button>
+            <button class="option-btn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 19a2 2 0 01-2 2H4a2 2 0 01-2-2V5a2 2 0 012-2h5l2 3h5a2 2 0 012 2z"/>
+              </svg>
+              <span>Browse Prompts</span>
+            </button>
+          </div>
+          
+          <div class="composer-footer">
+            <span class="char-count">0/3,000</span>
+            <p class="disclaimer">Quanta AI may generate inaccurate information. Use responsibly.</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Right Sidebar -->
+    <aside class="right-sidebar">
+      <div class="right-header">
+        <button class="upgrade-btn">Upgrade</button>
+        <div class="right-actions">
+          <button class="action-icon-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M9.09 9a3 3 0 011.5 5.917M12 17h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+          </button>
+          <button class="action-icon-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M15 17h5l-5 5v-5z"/>
+              <path d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M9 11h.01M9 8h.01"/>
+            </svg>
+          </button>
+          <button class="action-icon-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+          </button>
+          <div class="user-avatar-small">Q</div>
+        </div>
+      </div>
+
+      <div class="projects-section">
+        <div class="section-header">
+          <h3>Recent Chats</h3>
+          <button class="section-menu">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 5v.01M12 12v.01M12 19v.01M12 6a6 6 0 110 12 6 6 0 010-12z"/>
+            </svg>
+          </button>
+        </div>
+        
+        <button class="new-chat-btn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 5v14m-7-7h14"/>
+          </svg>
+          <span>New Chat</span>
+        </button>
+
+        <div class="chat-history">
+          <div class="chat-item">
+            <div class="chat-icon">💬</div>
+            <div class="chat-info">
+              <div class="chat-title">Learning From 100 Years of...</div>
+              <div class="chat-preview">Research officiants</div>
+            </div>
+          </div>
+          
+          <div class="chat-item">
+            <div class="chat-icon">💬</div>
+            <div class="chat-info">
+              <div class="chat-title">What does a senior lead de...</div>
+              <div class="chat-preview">Career advice</div>
+            </div>
+          </div>
+          
+          <div class="chat-item">
+            <div class="chat-icon">💬</div>
+            <div class="chat-info">
+              <div class="chat-title">Write a sweet note to your...</div>
+              <div class="chat-preview">Personal message</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
